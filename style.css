@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+  background-color: #fff;
+  margin: auto;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #000;
+}
+
+body.light-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Estilos del interruptor de modo */
+.toggle-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #d7c9c9;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: transform 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #008496b5;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-icon {
+  transform: translateX(30px);
+}
+
+/* Estilos del contenedor principal */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1px;
+  text-align: center;
+}
+
+/* Estilos del pie de página */
+footer {
+  color: #000000;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.light-mode footer {
+  color: #ff0000;
+}
+
+/* Estilos del texto principal */
+.top-text {
+  text-align: center;
+  font-size: 62px;
+  color: rgb(10, 145, 255);
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .encabezado {
+    background-size: contain;
+    height: auto;
+  }
+}
+
+/* Estilos del logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}

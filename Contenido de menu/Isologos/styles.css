@@ -1,0 +1,19 @@
+#isotipos {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #isotipos h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  #isotipos p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
